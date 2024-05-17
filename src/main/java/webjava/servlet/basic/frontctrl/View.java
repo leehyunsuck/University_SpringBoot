@@ -21,9 +21,7 @@ public class View {
     }
 
     //step3 render 메소드
-    public void render(Map<String, Object> model, HttpServletRequest request, HttpServletResponse res)
-        throws ServletException, IOException {
-
+    public void render(Map<String, Object> model, HttpServletRequest request, HttpServletResponse res) throws ServletException, IOException {
         modelToRequestAttribute(model, request);
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
         dispatcher.forward(request, res);

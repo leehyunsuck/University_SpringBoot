@@ -53,8 +53,12 @@ public class FrontControllerServlet3 extends HttpServlet {
 
         //
         String viewName = modelView.getViewName();
-        View view = new View("/WEB-INF/step3/" + viewName + ".jsp");
+        View view = viewResolver(viewName);
 
         view.render(modelView.getModel(), req, res);
+    }
+
+    private View viewResolver(String viewName) {
+        return new View("/WEB-INF/step3/" + viewName + ".jsp");
     }
 }
