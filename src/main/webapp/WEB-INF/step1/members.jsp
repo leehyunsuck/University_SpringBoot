@@ -6,7 +6,7 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/front-ctrl/step1/students/new-form">접수화면</a>
+<a href="/springmvc/step6/members/new-form">접수화면</a>
 <table>
     <thead>
     <th>id</th>

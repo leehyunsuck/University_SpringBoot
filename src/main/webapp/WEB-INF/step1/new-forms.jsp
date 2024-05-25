@@ -4,7 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/front-ctrl/step1/students/save" method="post">
+<form action="/springmvc/step6/members/save" method="post">
     username: <input type="text" name="username"/>
     age: <input type="text" name="age"/>
     <button type="submit">전송</button>
